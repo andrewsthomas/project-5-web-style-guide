@@ -20,4 +20,49 @@ $font-weight--extra-bold  : 900;
 
 $white : #fff;
 $black : #0b0b0b;
-$grey  : #797e83;
+$grey  : #838383;
+
+$viking         : #52bab3;
+$malibu         : #53ddfc;
+$emerald        : #63cc82;
+$sunglo         : #e4757a;
+$coral          : #fd7856;
+$purple-majesty : #927bc1;
+$scooter        : #39add1;
+
+// Color Usage
+
+$color-primary    : $viking;
+$color-secondary  : $scooter;
+$color-accent     : $emerald;
+$color-shadow     : rgba($black, .2);
+
+// UI Colors
+
+$ui-colors: (
+  default : $malibu,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple-majesty
+);
+
+// Text
+
+$base__font-size  : 16px;
+$base__line       : 24px;
+$letter-space     : 1px;
+
+// Border radius
+
+$br--default      : .4em;
+$br--round        : 50%;
+
+// Path to Assets
+
+$path--rel        : "../img";
+
+// Breakpoints
+
+$brkpoint--sm     : 1px;
+$brkpoint--md     : 768px;
