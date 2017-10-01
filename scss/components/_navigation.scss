@@ -1,0 +1,18 @@
+// ==========================================================================
+// Navigation
+// ==========================================================================
+
+ul {
+  width: 90%;
+  margin: 0 auto;
+  .nav__item {
+    display: block;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em;
+    a:-webkit-any-link {
+      text-decoration: none;
+    }
+  }
+}
