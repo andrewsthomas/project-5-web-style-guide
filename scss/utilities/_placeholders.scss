@@ -22,3 +22,42 @@
   color: palette(black);
   border-color: $color-primary;
 }
+
+// Buttons
+
+%btn {
+  width: 95%;
+  padding: em(10px) em(30px);
+  margin: em(22px) auto;
+  border: 0;
+  border-radius : $br--default;
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(12px);
+  font-weight: $font-weight--medium;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+// Grid Row Theme Colors
+
+%grid-theme {
+  width: 100%;
+  font-size: em(12px);
+  display: block;
+  margin: em(2px) auto;
+  padding: em(8.5px) em(12px);
+  border-radius: $br--default;
+}
+
+// Grid Row Theme Colors Bottom Margin
+
+%grid-margin {
+  margin-bottom: em(35px);
+}

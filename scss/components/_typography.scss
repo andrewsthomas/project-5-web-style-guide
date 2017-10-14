@@ -1,0 +1,36 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+body {
+	color: $grey;
+  font-size: $base__font-size;
+  font-family: $font-family--primary;
+  line-height: ($base__line/$base__font-size);
+	font-weight: $font-weight--medium;
+}
+
+.headline--primary {
+	margin-left: em(14px);
+	color: $color-primary;
+	line-height: (18px/14px);
+}
+
+.headline--secondary {
+	margin-top: em(42px);
+	font-weight: $font-weight--light;
+}
+
+.link {
+	text-decoration: none;
+	color: $color-primary;
+}
+
+.blockquote {
+	font-size: em(18px);
+	font-style: italic;
+	font-weight: $font-weight--light;
+	padding-left: em(16px);
+	border-left: solid $color-primary em(5px);
+	border-radius: $br--default;
+}

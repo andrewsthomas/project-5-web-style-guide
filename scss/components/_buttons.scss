@@ -1,0 +1,26 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+.btn {
+  &--default {
+    @extend %btn;
+    background-color: $color-primary;
+  }
+  &--success {
+    @extend %btn;
+    background-color: $emerald;
+  }
+  &--error {
+    @extend %btn;
+    background-color: $sunglo;
+  }
+  &--warning {
+    @extend %btn;
+    background-color: $coral;
+  }
+  &--info {
+    @extend %btn;
+    background-color: $purple-majesty;
+  }
+}

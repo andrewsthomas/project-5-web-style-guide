@@ -1,3 +1,81 @@
+// ==========================================================================
+// Grid
+// ==========================================================================
+
+.container {
+  width: 80%;
+  margin: 2em auto;
+
+
+}
+
+.grid__row .grid__col {
+  &--3.theme__colors {
+    @extend %grid-theme;
+    background-color: lighten($purple-majesty, 10%);
+    &:last-child {
+      @extend %grid-margin;
+    }
+  }
+  &--4.theme__colors {
+    @extend %grid-theme;
+    background-color: lighten($malibu, 10%);
+    &:last-child {
+      @extend %grid-margin;
+    }
+  }
+  &--5.theme__colors {
+    @extend %grid-theme;
+    background-color: lighten($emerald, 10%);
+    &:last-child {
+      @extend %grid-margin;
+    }
+  }
+  &--6.theme__colors {
+    @extend %grid-theme;
+    background-color: lighten($scooter, 10%);
+    &:last-child {
+      @extend %grid-margin;
+    }
+  }
+  &--7.theme__colors {
+    @extend %grid-theme;
+    background-color: lighten($sunglo, 10%);
+    &:last-child {
+      @extend %grid-margin;
+    }
+  }
+  &--8.theme__colors {
+    @extend %grid-theme;
+    background-color: lighten($coral, 10%);
+    &:last-child {
+      @extend %grid-margin;
+    }
+  }
+  &--12.theme__colors {
+    @extend %grid-theme;
+    background-color: lighten($emerald, 10%);
+    &:last-child {
+      @extend %grid-margin;
+    }
+  }
+}
+
+.grid__row.theme__colors {
+  margin-bottom: em(40px);
+}
+
+.grid__row {
+  @include mq(medium) {
+    display: flex;
+  }
+}
+
+.grid__row.grid__col--9 {
+  display: flex;
+  justify-content: flex-end;
+}
+
 // .grid {
 //   @extend %clearfix;
 //   @extend .centered;

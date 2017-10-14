@@ -1,13 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  width: 95%;
+  padding: 0.7142857143em 2.1428571429em;
+  margin: 1.5714285714em auto;
+  border: 0;
+  border-radius: 0.2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8571428571em;
+  font-weight: 400;
+  transition: opacity 0.3s;
+  display: block; }
+  .btn--default:hover, .btn--success:hover, .btn--error:hover, .btn--warning:hover, .btn--info:hover {
+    opacity: .75; }
+  .btn--default:active, .btn--success:active, .btn--error:active, .btn--warning:active, .btn--info:active {
+    opacity: initial; }
+
+.grid__row .grid__col--3.theme__colors, .grid__row .grid__col--4.theme__colors, .grid__row .grid__col--5.theme__colors, .grid__row .grid__col--6.theme__colors, .grid__row .grid__col--7.theme__colors, .grid__row .grid__col--8.theme__colors, .grid__row .grid__col--12.theme__colors {
+  width: 100%;
+  font-size: 0.8571428571em;
+  display: block;
+  margin: 0.1428571429em auto;
+  padding: 0.6071428571em 0.8571428571em;
+  border-radius: 0.2em; }
+
+.grid__row .grid__col--3.theme__colors:last-child, .grid__row .grid__col--4.theme__colors:last-child, .grid__row .grid__col--5.theme__colors:last-child, .grid__row .grid__col--6.theme__colors:last-child, .grid__row .grid__col--7.theme__colors:last-child, .grid__row .grid__col--8.theme__colors:last-child, .grid__row .grid__col--12.theme__colors:last-child {
+  margin-bottom: 2.5em; }
+
+body {
+  color: #838383;
+  font-size: 14px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5714285714;
+  font-weight: 400; }
+
+.headline--primary {
+  margin-left: 1em;
+  color: #58e1c1;
+  line-height: 1.2857142857; }
+
+.headline--secondary {
+  margin-top: 3em;
+  font-weight: 300; }
+
+.link {
+  text-decoration: none;
+  color: #58e1c1; }
+
+.blockquote {
+  font-size: 1.2857142857em;
+  font-style: italic;
+  font-weight: 300;
+  padding-left: 1.1428571429em;
+  border-left: solid #58e1c1 0.3571428571em;
+  border-radius: 0.2em; }
+
+.container {
+  width: 80%;
+  margin: 2em auto; }
+
+.grid__row .grid__col--3.theme__colors {
+  background-color: #af9ed1; }
+.grid__row .grid__col--4.theme__colors {
+  background-color: #85e7fd; }
+.grid__row .grid__col--5.theme__colors {
+  background-color: #89d9a1; }
+.grid__row .grid__col--6.theme__colors {
+  background-color: #62bedb; }
+.grid__row .grid__col--7.theme__colors {
+  background-color: #eca0a3; }
+.grid__row .grid__col--8.theme__colors {
+  background-color: #fea088; }
+.grid__row .grid__col--12.theme__colors {
+  background-color: #89d9a1; }
+
+.grid__row.theme__colors {
+  margin-bottom: 2.8571428571em; }
+
+@media (min-width: 769px) {
+  .grid__row {
+    display: flex; } }
+
+.grid__row.grid__col--9 {
+  display: flex;
+  justify-content: flex-end; }
+
+.img--logo {
+  display: block;
+  margin: 2em auto; }
+  @media (min-width: 769px) {
+    .img--logo {
+      display: inline-block; } }
+
+.img--avatar {
+  display: block;
+  margin: 0.7142857143em auto;
+  height: 150px;
+  width: 150px; }
+
+.img--frame {
+  width: 100%;
+  margin: 1.4285714286em auto;
+  padding: 0.5714285714em;
+  border: solid #838383 1px; }
+
 ul {
-  width: 90%;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0 auto 5em;
+  padding: 0; }
   ul .nav__item {
     display: block;
     list-style: none;
     text-align: center;
-    text-decoration: none;
-    padding: 0.5em; }
-    ul .nav__item a:-webkit-any-link {
-      text-decoration: none; }
+    text-decoration: none; }
+    ul .nav__item:hover {
+      color: #fff;
+      background-color: #58e1c1;
+      border-radius: 0.2em; }
+    ul .nav__item *:-webkit-any-link {
+      text-decoration: none;
+      color: inherit; }
+  ul .nav__item * {
+    display: block;
+    padding: 0.7142857143em; }
+  @media (min-width: 769px) {
+    ul {
+      display: flex;
+      justify-content: flex-end; } }
+
+.form__label--hidden {
+  display: none; }
+
+.form__input {
+  display: block;
+  width: 90%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #58e1c1 0.3571428571em;
+  font-size: 0.8571428571em;
+  padding: 0.7142857143em;
+  margin: 0 auto 1.7142857143em; }
+
+.btn--default {
+  background-color: #58e1c1; }
+.btn--success {
+  background-color: #63cc82; }
+.btn--error {
+  background-color: #e4757a; }
+.btn--warning {
+  background-color: #fd7856; }
+.btn--info {
+  background-color: #927bc1; }
 
 /*# sourceMappingURL=styles.css.map */

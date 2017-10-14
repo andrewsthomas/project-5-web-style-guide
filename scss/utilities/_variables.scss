@@ -22,7 +22,7 @@ $white : #fff;
 $black : #0b0b0b;
 $grey  : #838383;
 
-$viking         : #52bab3;
+$viking         : #58e1c1;
 $malibu         : #53ddfc;
 $emerald        : #63cc82;
 $sunglo         : #e4757a;
@@ -49,14 +49,18 @@ $ui-colors: (
 
 // Text
 
-$base__font-size  : 16px;
-$base__line       : 24px;
+$base__font-size  : 14px;
+$base__line       : 22px;
 $letter-space     : 1px;
 
-// Border radius
+// Border Radius
 
-$br--default      : .4em;
+$br--default      : .2em;
 $br--round        : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
 
 // Path to Assets
 
