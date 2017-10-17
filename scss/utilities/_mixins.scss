@@ -46,62 +46,18 @@
 
 // Flexbox layout
 
-@mixin flexbox() {
-  display: -webkit-box; // old
-  display: -moz-box; // old
-  display: -ms-flexbox; // ie
-  display: -webkit-flex; // new
-  display: flex; // new
-}
-
-@mixin flex($values) {
-  -webkit-box-flex: $values;
-  -moz-box-flex: $values;
-  -ms-flex: $values;
-  -webkit-flex: $values;
-  flex: $values;
-}
-
-@mixin order($val) {
-  -webkit-box-ordinal-group: $val; // old
-  -moz-box-ordinal-group: $val; // old
-  -ms-flex-order: $val; // ie
-  -webkit-order: $val; // new
-  order: $val; // new
-}
-
-@mixin flex-direction($direction) {
-  @if $direction == column {
-    -webkit-flex-direction: vertical;
-    -moz-flex-direction: vertical;
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-  @else {
-    -webkit-flex-direction: horizontal;
-    -moz-flex-direction: horizontal;
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@mixin flex-flow($direction, $wrap) {
-  flex-flow: $direction $wrap;
+@mixin flexed($dis: null, $flow: null, $just: null, $flex: null) {
+    display: $dis;
+    flex-flow: $flow;
+    justify-content: $just;
+    flex: $flex;
 }
 
 @mixin centered() { // used to center flexbox items
   margin: auto;
 }
 
-@mixin space-around() { // used on a flex container to evenly distribute flex items
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-// Grid Columns
+// Grid columns
 
 @mixin g-columns {
   @for $i from 1 through $g-col-count {
