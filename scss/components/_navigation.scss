@@ -26,6 +26,7 @@
     padding: em(10px);
   }
   @include mq(medium) {
-    @include flexed($dis: flex, $flow: row);
+    @include flexed($dis: flex, $flow: row, $just: flex-end);
+    margin: 0 auto;
   }
 }

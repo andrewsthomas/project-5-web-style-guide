@@ -28,7 +28,7 @@
 %btn {
   width: 95%;
   padding: em(10px) em(30px);
-  margin: em(22px) auto;
+  margin: em(22px) em(14px);
   border: 0;
   border-radius : $br--default;
   color: $white;
@@ -36,12 +36,15 @@
   font-size : em(12px);
   font-weight: $font-weight--medium;
   transition: opacity $trns-duration;
-  display: block;
   &:hover {
     opacity: .75;
   }
   &:active {
     opacity: initial;
+  }
+  @include mq(small) {
+    display: block;
+    margin: em(22px) auto;
   }
 }
 
@@ -54,10 +57,4 @@
   margin: em(2px) auto;
   padding: em(8.5px) em(12px);
   border-radius: $br--default;
-}
-
-// Grid Row Theme Colors Bottom Margin
-
-%grid-margin {
-  margin-bottom: em(35px);
 }

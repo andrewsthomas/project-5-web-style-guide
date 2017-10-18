@@ -10,9 +10,11 @@
   }
 }
 
-.grid_row {
+.grid__row {
   @include mq(medium) {
-    @include flexed($dis: flex, $flow: row wrap);
+    @include flexed($dis: flex, $flow: row, $just: space-between);
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -31,53 +33,130 @@
     @extend %grid-theme;
     background-color: lighten($purple-majesty, 10%);
     &:last-child {
-      @extend %grid-margin;
+      @include mq(small) {
+        @include grid-margin;
+      }
     }
   }
   &--4.theme__colors {
     @extend %grid-theme;
     background-color: lighten($malibu, 10%);
     &:last-child {
-      @extend %grid-margin;
+      @include mq(small) {
+        @include grid-margin;
+      }
     }
   }
   &--5.theme__colors {
     @extend %grid-theme;
     background-color: lighten($emerald, 10%);
     &:last-child {
-      @extend %grid-margin;
+      @include mq(small) {
+        @include grid-margin;
+      }
     }
   }
   &--6.theme__colors {
     @extend %grid-theme;
     background-color: lighten($scooter, 10%);
     &:last-child {
-      @extend %grid-margin;
+      @include mq(small) {
+        @include grid-margin;
+      }
     }
   }
   &--7.theme__colors {
     @extend %grid-theme;
     background-color: lighten($sunglo, 10%);
     &:last-child {
-      @extend %grid-margin;
+      @include mq(small) {
+        @include grid-margin;
+      }
     }
   }
   &--8.theme__colors {
     @extend %grid-theme;
     background-color: lighten($coral, 10%);
     &:last-child {
-      @extend %grid-margin;
+      @include mq(small) {
+        @include grid-margin;
+      }
     }
   }
   &--12.theme__colors {
     @extend %grid-theme;
     background-color: lighten($emerald, 10%);
     &:last-child {
-      @extend %grid-margin;
+      @include mq(small) {
+        @include grid-margin;
+      }
     }
   }
 }
 
 .grid__row.theme__colors {
   margin-bottom: em(40px);
+}
+
+.grid__col {
+  &--1 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--2 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--3 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--4 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--5 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--6 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--7 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--8 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--9 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--10 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--11 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
+  &--12 {
+    @include mq(medium) {
+      @include flexed($dis: flex, $just: center);
+    }
+  }
 }
