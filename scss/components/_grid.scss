@@ -32,63 +32,91 @@
   &--3.theme__colors {
     @extend %grid-theme;
     background-color: lighten($purple-majesty, 10%);
+    @include mq(medium) {
+      @include grid-margins-medium;
+      text-align: center;
+    }
     &:last-child {
       @include mq(small) {
-        @include grid-margin;
+        @include grid-margin-bottom;
       }
     }
   }
   &--4.theme__colors {
     @extend %grid-theme;
     background-color: lighten($malibu, 10%);
+    @include mq(medium) {
+      @include grid-margins-medium;
+      text-align: center;
+    }
     &:last-child {
       @include mq(small) {
-        @include grid-margin;
+        @include grid-margin-bottom;
       }
     }
   }
   &--5.theme__colors {
     @extend %grid-theme;
     background-color: lighten($emerald, 10%);
+    @include mq(medium) {
+      @include grid-margins-medium;
+      text-align: center;
+    }
     &:last-child {
       @include mq(small) {
-        @include grid-margin;
+        @include grid-margin-bottom;
       }
     }
   }
   &--6.theme__colors {
     @extend %grid-theme;
     background-color: lighten($scooter, 10%);
+    @include mq(medium) {
+      @include grid-margins-medium;
+      text-align: center;
+    }
     &:last-child {
       @include mq(small) {
-        @include grid-margin;
+        @include grid-margin-bottom;
       }
     }
   }
   &--7.theme__colors {
     @extend %grid-theme;
     background-color: lighten($sunglo, 10%);
+    @include mq(medium) {
+      @include grid-margins-medium;
+      text-align: center;
+    }
     &:last-child {
       @include mq(small) {
-        @include grid-margin;
+        @include grid-margin-bottom;
       }
     }
   }
   &--8.theme__colors {
     @extend %grid-theme;
     background-color: lighten($coral, 10%);
+    @include mq(medium) {
+      @include grid-margins-medium;
+      text-align: center;
+    }
     &:last-child {
       @include mq(small) {
-        @include grid-margin;
+        @include grid-margin-bottom;
       }
     }
   }
   &--12.theme__colors {
     @extend %grid-theme;
     background-color: lighten($emerald, 10%);
+    @include mq(medium) {
+      @include grid-margins-medium;
+      text-align: center;
+    }
     &:last-child {
       @include mq(small) {
-        @include grid-margin;
+        @include grid-margin-bottom;
       }
     }
   }
@@ -156,7 +184,7 @@
   }
   &--12 {
     @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+      @include flexed($dis: flex, $just: flex-start);
     }
   }
 }

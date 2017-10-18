@@ -22,4 +22,7 @@
   margin: em(20px) auto;
   padding: em(8px);
   border: solid $grey 1px;
+  @include mq(medium) {
+    width: 75%;
+  }
 }
