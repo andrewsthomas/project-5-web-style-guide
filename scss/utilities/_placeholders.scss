@@ -51,10 +51,10 @@
 
 // Grid Row Theme Colors
 
-%grid-theme {
+%grid-styles {
   font-size: em(12px);
   display: block;
-  margin: em(2px) auto;
+  margin: em(28px) auto;
   padding: em(8.5px) em(12px);
   border-radius: $br--default;
   @include mq(small) {
