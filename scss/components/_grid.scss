@@ -12,7 +12,7 @@
 
 .grid__row {
   @include mq(medium) {
-    @include flexed($dis: flex, $flow: row, $just: space-between);
+    @include flexed($dis: flex, $flow: row, $just: center);
     align-items: center;
     width: 100%;
   }
