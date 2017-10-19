@@ -6,19 +6,21 @@
   width: 100%;
   margin: 0 auto 5em;
   padding: 0;
-  .nav__item {
-    display: block;
-    list-style: none;
-    text-align: center;
-    text-decoration: none;
-    &:hover {
-      color: $white;
-      background-color: $color-primary;
-      border-radius: $br--default;
-    }
-    *:-webkit-any-link {
+  .nav {
+    @include e(item) {
+      display: block;
+      list-style: none;
+      text-align: center;
       text-decoration: none;
-      color: inherit;
+      &:hover {
+        color: $white;
+        background-color: $color-primary;
+        border-radius: $br--default;
+      }
+      *:-webkit-any-link {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
   .nav__item * {

@@ -45,6 +45,7 @@
   @include mq(small) {
     display: block;
     margin: em(22px) auto;
+    padding: em(10px) em(30px);
   }
 }
 

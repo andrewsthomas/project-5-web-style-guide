@@ -2,23 +2,27 @@
 // Typography
 // ==========================================================================
 
-body {
+* {
 	color: $grey;
-  font-size: $base__font-size;
-  font-family: $font-family--primary;
-  line-height: ($base__line/$base__font-size);
+	font-size: $base__font-size;
+	font-family: $font-family--primary;
+	line-height: ($base__line/$base__font-size);
 	font-weight: $font-weight--medium;
 }
 
-.headline--primary {
-	margin-left: em(14px);
-	color: $color-primary;
-	line-height: (18px/14px);
+.headline {
+	@include m(primary) {
+		margin-left: em(14px);
+		color: $color-primary;
+		line-height: (18px/14px);
+	}
 }
 
-.headline--secondary {
-	margin-top: em(42px);
-	font-weight: $font-weight--light;
+.headline {
+	@include m(secondary) {
+		margin-top: em(42px);
+		font-weight: $font-weight--light;
+	}
 }
 
 .link {

@@ -2,27 +2,33 @@
 // Images
 // ==========================================================================
 
-.img--logo {
-  display: block;
-  margin: 2em auto;
-  @include mq(medium) {
-    display: inline-block;
+.img {
+  @include m(logo) {
+    display: block;
+    margin: 2em auto;
+    @include mq(medium) {
+      display: inline-block;
+    }
   }
 }
 
-.img--avatar {
-  display: block;
-  margin: em(10px) auto;
-  height: 150px;
-  width: 150px;
+.img {
+  @include m(avatar) {
+    display: block;
+    margin: em(10px) auto;
+    height: 150px;
+    width: 150px;
+  }
 }
 
-.img--frame {
-  width: 100%;
-  margin: em(20px) auto;
-  padding: em(8px);
-  border: solid $grey 1px;
-  @include mq(medium) {
-    width: 75%;
+.img {
+  @include m(frame) {
+    width: 100%;
+    margin: em(20px) auto;
+    padding: em(8px);
+    border: solid $grey 1px;
+    @include mq(medium) {
+      width: 75%;
+    }
   }
 }

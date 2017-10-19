@@ -21,7 +21,8 @@
   @media (min-width: 1px) and (max-width: 768px) {
     .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
       display: block;
-      margin: 1.5714285714em auto; } }
+      margin: 1.5714285714em auto;
+      padding: 0.7142857143em 2.1428571429em; } }
 
 .grid__row .grid__col--3.theme__colors, .grid__row .grid__col--4.theme__colors, .grid__row .grid__col--5.theme__colors, .grid__row .grid__col--6.theme__colors, .grid__row .grid__col--7.theme__colors, .grid__row .grid__col--8.theme__colors, .grid__row .grid__col--12.theme__colors {
   font-size: 0.8571428571em;
@@ -33,7 +34,7 @@
     .grid__row .grid__col--3.theme__colors, .grid__row .grid__col--4.theme__colors, .grid__row .grid__col--5.theme__colors, .grid__row .grid__col--6.theme__colors, .grid__row .grid__col--7.theme__colors, .grid__row .grid__col--8.theme__colors, .grid__row .grid__col--12.theme__colors {
       width: 100%; } }
 
-body {
+* {
   color: #838383;
   font-size: 14px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;

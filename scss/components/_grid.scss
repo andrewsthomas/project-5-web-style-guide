@@ -10,19 +10,23 @@
   }
 }
 
-.grid__row {
-  @include mq(medium) {
-    @include flexed($dis: flex, $flow: row, $just: center);
-    align-items: center;
-    width: 100%;
+.grid {
+  @include e(row) {
+    @include mq(medium) {
+      @include flexed($dis: flex, $flow: row, $just: center);
+      align-items: center;
+      width: 100%;
+    }
   }
 }
 
 // Calculate grid columns
 
-.grid__col {
-  @include mq(medium) {
-    @include g-columns;
+.grid {
+  @include e(col) {
+    @include mq(medium) {
+      @include g-columns;
+    }
   }
 }
 
@@ -126,65 +130,67 @@
   margin-bottom: em(40px);
 }
 
-.grid__col {
-  &--1 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+.grid {
+  @include e(col) {
+    &--1 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--2 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--2 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--3 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--3 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--4 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--4 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--5 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--5 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--6 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--6 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--7 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--7 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--8 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--8 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--9 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--9 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--10 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--10 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--11 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: center);
+    &--11 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: center);
+      }
     }
-  }
-  &--12 {
-    @include mq(medium) {
-      @include flexed($dis: flex, $just: flex-start);
+    &--12 {
+      @include mq(medium) {
+        @include flexed($dis: flex, $just: flex-start);
+      }
     }
   }
 }

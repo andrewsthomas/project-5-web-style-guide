@@ -6,18 +6,24 @@
 	margin-top: em(42px);
 }
 
-.form__label--hidden {
-  display: none;
+.form {
+	@include e(label) {
+		@include m(hidden) {
+			display: none;
+		}
+	}
 }
 
-.form__input {
-  display: block;
-  width: 90%;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid $color-primary em(5px);
-  font-size: em(12px);
-  padding: em(10px);
-  margin: 0 auto em(24px);
+.form {
+	@include e(input) {
+		display: block;
+	  width: 90%;
+	  border-top: none;
+	  border-left: none;
+	  border-right: none;
+	  border-bottom: solid $color-primary em(5px);
+	  font-size: em(12px);
+	  padding: em(10px);
+	  margin: 0 auto em(24px);
+	}
 }
