@@ -59,12 +59,9 @@
       background-color: lighten($emerald, 10%);
     }
   }
-
-
-.grid__row.theme__colors {
-  margin-bottom: em(40px);
 }
-}
+
+// Grid Column Styles
 
 .grid {
   @include e(col) {
