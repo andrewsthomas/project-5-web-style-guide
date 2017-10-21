@@ -4,6 +4,8 @@
 
 .form {
 	margin-top: em(42px);
+	width: 95%;
+	@include flexed($dis: flex, $flow: column, $just: center);
 }
 
 .form {

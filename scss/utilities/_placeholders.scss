@@ -27,8 +27,8 @@
 
 %btn {
   display: block;
-  width: 95%;
-  padding: em(10px) em(30px);
+  width: 100%;
+  padding: em(14px) em(30px);
   margin: em(22px) auto;
   border: 0;
   border-radius : $br--default;
@@ -43,6 +43,10 @@
   &:active {
     opacity: initial;
   }
+  @include mq(medium) {
+    width: 95%;
+    margin: em(22px) em(14px);
+  }
 }
 
 // Grid Column Styling
@@ -56,5 +60,6 @@
   width: 100%;
   @include mq(medium) {
     @include flexed($dis: flex, $flow: row, $just: center);
+    margin: em(14px) em(14px);
   }
 }
