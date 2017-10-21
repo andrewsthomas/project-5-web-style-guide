@@ -5,7 +5,7 @@
 .btn {
   &--default {
     @extend %btn;
-    background-color: $color-primary;
+    background-color: $malibu;
   }
   &--success {
     @extend %btn;

@@ -16,7 +16,7 @@
       margin-bottom: em(22px);
     }
     @include mq(medium) {
-      @include flexed($dis: flex, $flow: row, $just: center);
+      @include flexed($dis: flex, $flow: row, $just: space-around);
       align-items: center;
       width: 100%;
     }
@@ -35,134 +35,74 @@
 
 // Grid row theme colors
 
-.grid__col {
-  &--3.theme__colors {
-    background-color: lighten($purple-majesty, 10%);
+.grid {
+  @include e(col) {
+    &--3.theme__colors {
+      background-color: lighten($purple-majesty, 10%);
+    }
+    &--4.theme__colors {
+      background-color: lighten($malibu, 10%);
+    }
+    &--5.theme__colors {
+      background-color: lighten($emerald, 10%);
+    }
+    &--6.theme__colors {
+      background-color: lighten($scooter, 10%);
+    }
+    &--7.theme__colors {
+      background-color: lighten($sunglo, 10%);
+    }
+    &--8.theme__colors {
+      background-color: lighten($coral, 10%);
+    }
+    &--12.theme__colors {
+      background-color: lighten($emerald, 10%);
+    }
   }
-  &--4.theme__colors {
-    background-color: lighten($malibu, 10%);
-  }
-  &--5.theme__colors {
-    background-color: lighten($emerald, 10%);
-  }
-  &--6.theme__colors {
-    background-color: lighten($scooter, 10%);
-  }
-  &--7.theme__colors {
-    background-color: lighten($sunglo, 10%);
-  }
-  &--8.theme__colors {
-    background-color: lighten($coral, 10%);
-  }
-  &--12.theme__colors {
-    background-color: lighten($emerald, 10%);
-  }
+
 
 .grid__row.theme__colors {
   margin-bottom: em(40px);
 }
+}
 
-.grid__col {
+.grid {
   @include e(col) {
     &--1 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
-
     &--2 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
-
     &--3 {
-      @extend %grid-styles;
-      margin-bottom: em(28px);
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-        }
-      }
+      @extend %grid-col-styles;
+    }
     &--4 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
     &--5 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
     &--6 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
     &--7 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
     &--8 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
     &--9 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
     &--10 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
     &--11 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: center);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
     &--12 {
-      @extend %grid-styles;
-      @include mq(medium) {
-        @include flexed($dis: flex, $just: flex-start);
-        @include grid-margins-medium;
-        text-align: center;
-      }
+      @extend %grid-col-styles;
     }
   }
-}
 }

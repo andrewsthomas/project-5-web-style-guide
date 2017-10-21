@@ -26,9 +26,10 @@
 // Buttons
 
 %btn {
+  display: block;
   width: 95%;
   padding: em(10px) em(30px);
-  margin: em(22px) em(14px);
+  margin: em(22px) auto;
   border: 0;
   border-radius : $br--default;
   color: $white;
@@ -42,22 +43,18 @@
   &:active {
     opacity: initial;
   }
-  @include mq(small) {
-    display: block;
-    margin: em(22px) auto;
-    padding: em(10px) em(30px);
-  }
 }
 
-// Grid Row Theme Colors
+// Grid Column Styling
 
-%grid-styles {
-  font-size: em(12px);
+%grid-col-styles {
   display: block;
-  margin: em(28px) auto;
+  font-size: em(12px);
   padding: em(8.5px) em(12px);
+  margin: em(6px) auto;
   border-radius: $br--default;
-  @include mq(small) {
-    width: 100%;
+  width: 100%;
+  @include mq(medium) {
+    @include flexed($dis: flex, $flow: row, $just: center);
   }
 }

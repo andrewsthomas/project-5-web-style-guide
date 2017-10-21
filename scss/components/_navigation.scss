@@ -6,6 +6,9 @@
   width: 100%;
   margin: 0 auto 5em;
   padding: 0;
+  @include mq(medium) {
+    @include flexed($dis: flex, $just: center)
+  }
   .nav {
     @include e(item) {
       display: block;
@@ -28,7 +31,7 @@
     padding: em(10px);
   }
   @include mq(medium) {
-    @include flexed($dis: flex, $flow: row, $just: flex-end);
+    @include flexed($dis: flex, $flow: row, $just: center);
     margin: 0 auto;
   }
 }
