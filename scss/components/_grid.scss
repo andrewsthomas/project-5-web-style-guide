@@ -2,6 +2,8 @@
 // Grid
 // ==========================================================================
 
+// Container Styling
+
 .container {
   width: 80%;
   margin: 2em auto;
@@ -9,6 +11,8 @@
     @include flexed($dis: flex, $flow: row wrap);
   }
 }
+
+// Grid Row Styling
 
 .grid {
   @include e(row) {
@@ -23,45 +27,7 @@
   }
 }
 
-// Calculate grid columns
-
-.grid {
-  @include e(col) {
-    @include mq(medium) {
-      @include g-columns;
-    }
-  }
-}
-
-// Grid row theme colors
-
-.grid {
-  @include e(col) {
-    &--3.theme__colors {
-      background-color: lighten($purple-majesty, 10%);
-    }
-    &--4.theme__colors {
-      background-color: lighten($malibu, 10%);
-    }
-    &--5.theme__colors {
-      background-color: lighten($emerald, 10%);
-    }
-    &--6.theme__colors {
-      background-color: lighten($scooter, 10%);
-    }
-    &--7.theme__colors {
-      background-color: lighten($sunglo, 10%);
-    }
-    &--8.theme__colors {
-      background-color: lighten($coral, 10%);
-    }
-    &--12.theme__colors {
-      background-color: lighten($emerald, 10%);
-    }
-  }
-}
-
-// Grid Column Styles
+// Grid Column Styling
 
 .grid {
   @include e(col) {
@@ -100,6 +66,37 @@
     }
     &--12 {
       @extend %grid-col-styles;
+    }
+    @include mq(medium) {
+      @include g-columns;
+    }
+  }
+}
+
+// Grid Row Theme Colors
+
+.grid {
+  @include e(col) {
+    &--3.theme__colors {
+      background-color: lighten($purple-majesty, 10%);
+    }
+    &--4.theme__colors {
+      background-color: lighten($malibu, 10%);
+    }
+    &--5.theme__colors {
+      background-color: lighten($emerald, 10%);
+    }
+    &--6.theme__colors {
+      background-color: lighten($scooter, 10%);
+    }
+    &--7.theme__colors {
+      background-color: lighten($sunglo, 10%);
+    }
+    &--8.theme__colors {
+      background-color: lighten($coral, 10%);
+    }
+    &--12.theme__colors {
+      background-color: lighten($emerald, 10%);
     }
   }
 }
