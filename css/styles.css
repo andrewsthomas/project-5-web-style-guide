@@ -36,9 +36,7 @@
 
 * {
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-* {
+  box-sizing: border-box;
   color: #838383;
   font-size: 14px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
